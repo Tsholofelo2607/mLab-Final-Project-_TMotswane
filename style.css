@@ -1,0 +1,149 @@
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+  }
+  
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-image: url('favicon-32x32.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    color: var(--cyan);
+  }
+  
+  .card-header .guarantee {
+    color: var(--bright-yellow);
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .card-header .description {
+    color: var(--grayish-blue);
+    font-size: 0.95rem;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .left, .right {
+    padding: 25px;
+    color: white;
+  }
+  
+  .left {
+    background-color: var(--cyan);
+  }
+  
+  .left h3 {
+    margin-top: 0;
+  }
+  
+  .left .price {
+    font-size: 2rem;
+    margin: 10px 0 5px;
+  }
+  
+  .left .price span {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-left: 5px;
+  }
+  
+  .left .note {
+    margin-bottom: 20px;
+  }
+  
+  .left button {
+    background-color: var(--bright-yellow);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--cyan);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .left button:hover {
+    background-color: hsl(71, 80%, 60%);
+  }
+  
+  .right {
+    background-color: hsl(179, 47%, 52%);
+  }
+  
+  .right h3 {
+    margin-top: 0;
+    color: white;
+  }
+  
+  .right ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+  }
+  
+  .right ul li {
+    line-height: 1.6;
+  }
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--grayish-blue);
+  }
+  
+  
+  footer a {
+    color: var(--cyan);
+    text-decoration: none;
+  }
+  
+  @media (min-width: 600px) {
+    .card-body {
+      flex-direction: row;
+    }
+  
+    .left, .right {
+      flex: 1;
+    }
+  }
+  
